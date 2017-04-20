@@ -33,6 +33,11 @@
 .view-box .view-item{
     background:#f4f4f4;
     padding:6px;
+    text-align: center;
+}
+
+.view-box .view-item .icon{
+    padding:12px;
 }
 
 @media screen and (max-width:500px) {
