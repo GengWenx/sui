@@ -1,29 +1,26 @@
 [hidden],
-template{
-  display:none;
+template,
+.sui-hidden {
+  display: none;
 }
 
-.sui-inline{
-  display:inline-block;
-  vertical-align:top;
+.sui-show,
+.sui-block {
+  display: block !important;
 }
 
-.sui-block{
-  display:block !important;
+.sui-ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
-.sui-ellipsis{
-  overflow:hidden;
-  white-space:nowrap;
-  text-overflow:ellipsis;
-}
-
-.sui-ellipsis-2{
-  display:-webkit-box;
-  overflow:hidden;
-  white-space:normal !important;
-  text-overflow:ellipsis;
-  word-wrap:break-word;
-  -webkit-line-clamp:2;
-  -webkit-box-orient:vertical;
+.sui-ellipsis-2 {
+  display: -webkit-box;
+  overflow: hidden;
+  white-space: normal !important;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }

@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /**
-	@style sui v0.0.1
+	@style sui v1.0.1
 	@author gengwenx
 	@date 2017/04/13
 */
@@ -57,14 +57,19 @@ b,
 strong {
   font-weight: bold;
 }
+*,
+:after,
+:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 [hidden],
-template {
+template,
+.sui-hidden {
   display: none;
 }
-.sui-inline {
-  display: inline-block;
-  vertical-align: top;
-}
+.sui-show,
 .sui-block {
   display: block !important;
 }
@@ -193,6 +198,12 @@ template {
   .sui-row-xs-12 {
     width: 100%;
   }
+  .visible-xs {
+    display: block;
+  }
+  .hidden-xs {
+    display: none;
+  }
 }
 @media screen and (min-width: 768px) {
   .sui-row-sm-1 {
@@ -230,6 +241,12 @@ template {
   }
   .sui-row-sm-12 {
     width: 100%;
+  }
+  .visible-sm {
+    display: block;
+  }
+  .hidden-sm {
+    display: none;
   }
 }
 @media screen and (min-width: 992px) {
@@ -269,6 +286,12 @@ template {
   .sui-row-md-12 {
     width: 100%;
   }
+  .visible-md {
+    display: block;
+  }
+  .hidden-md {
+    display: none;
+  }
 }
 @media screen and (min-width: 1200px) {
   .sui-row-lg-1 {
@@ -306,6 +329,12 @@ template {
   }
   .sui-row-lg-12 {
     width: 100%;
+  }
+  .visible-lg {
+    display: block;
+  }
+  .hidden-lg {
+    display: none;
   }
 }
 .sui-float-clear {
