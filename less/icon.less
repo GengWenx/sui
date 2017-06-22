@@ -1,5 +1,5 @@
 @font-face {
-  font-family:"suiicon";
+  font-family: "Suiicon";
   src: url('../fonts/iconfont.eot');
   src: url('../fonts/iconfont.eot?#iefix') format('embedded-opentype'),
   url('../fonts/iconfont.woff') format('woff'),
@@ -7,20 +7,29 @@
   url('../fonts/iconfont.svg#iconfont') format('svg');
 }
 
-.sui-icon{
-	font-family: "suiicon" !important;
-	font-size:1.8rem;
-	font-style: normal;
-	-webkit-font-smoothing: antialiased;
-	-webkit-text-stroke-width: 0.2px;
-	-moz-osx-font-smoothing: grayscale;
+[class^="sui-icon"],
+[class*="sui-icon"]{
+  //font-family: "suiicon" !important;
+  //font-size: 1.8rem;
+  //font-style: normal;
+  //-webkit-font-smoothing: antialiased;
+  //-webkit-text-stroke-width: 0.2px;
+  //-moz-osx-font-smoothing: grayscale;
+
+  display: inline-block;
+  font-family: Suiicon;
+  font-style: normal;
+  font-weight: normal;
+  //line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .sui-icons(@n, @i: 1) when (@i =< @n) {
-  .sui-icon-e@{i}:before{
+  .sui-icon-e@{i}:before {
     content: "\e@{i}";
   }
   .sui-icons(@n, (@i + 1));
 }
 
-.sui-icons(21);
+.sui-icons(39);

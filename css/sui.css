@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /**
-	@style sui v1.0.1
+	@style sui v1.0.2
 	@author gengwenx
 	@date 2017/04/13
 */
@@ -354,16 +354,17 @@ template,
   float: right;
 }
 @font-face {
-  font-family: "suiicon";
+  font-family: "Suiicon";
   src: url('../fonts/iconfont.eot');
   src: url('../fonts/iconfont.eot?#iefix') format('embedded-opentype'), url('../fonts/iconfont.woff') format('woff'), url('../fonts/iconfont.ttf') format('truetype'), url('../fonts/iconfont.svg#iconfont') format('svg');
 }
-.sui-icon {
-  font-family: "suiicon" !important;
-  font-size: 1.8rem;
+[class^="sui-icon"],
+[class*="sui-icon"] {
+  display: inline-block;
+  font-family: Suiicon;
   font-style: normal;
+  font-weight: normal;
   -webkit-font-smoothing: antialiased;
-  -webkit-text-stroke-width: 0.2px;
   -moz-osx-font-smoothing: grayscale;
 }
 .sui-icon-e1:before {
@@ -428,4 +429,58 @@ template,
 }
 .sui-icon-e21:before {
   content: "\e21";
+}
+.sui-icon-e22:before {
+  content: "\e22";
+}
+.sui-icon-e23:before {
+  content: "\e23";
+}
+.sui-icon-e24:before {
+  content: "\e24";
+}
+.sui-icon-e25:before {
+  content: "\e25";
+}
+.sui-icon-e26:before {
+  content: "\e26";
+}
+.sui-icon-e27:before {
+  content: "\e27";
+}
+.sui-icon-e28:before {
+  content: "\e28";
+}
+.sui-icon-e29:before {
+  content: "\e29";
+}
+.sui-icon-e30:before {
+  content: "\e30";
+}
+.sui-icon-e31:before {
+  content: "\e31";
+}
+.sui-icon-e32:before {
+  content: "\e32";
+}
+.sui-icon-e33:before {
+  content: "\e33";
+}
+.sui-icon-e34:before {
+  content: "\e34";
+}
+.sui-icon-e35:before {
+  content: "\e35";
+}
+.sui-icon-e36:before {
+  content: "\e36";
+}
+.sui-icon-e37:before {
+  content: "\e37";
+}
+.sui-icon-e38:before {
+  content: "\e38";
+}
+.sui-icon-e39:before {
+  content: "\e39";
 }

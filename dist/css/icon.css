@@ -31,13 +31,19 @@
 }
 
 .view-box .view-item{
-    background:#f4f4f4;
+    background:#f1f1f1;
     padding:6px;
     text-align: center;
 }
 
 .view-box .view-item .icon{
-    padding:12px;
+    padding:15px 0;
+    color:#d81e06;
+    font-size:22px;
+}
+
+.view-box .view-item .name{
+    color:#515151;
 }
 
 @media screen and (max-width:500px) {
