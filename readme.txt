@@ -1,16 +1,30 @@
 更新日志
-版本 1.0.3
+版本 1.0.4
 时间 2017-06-30
 人物 gengwenx
 
+
 目录说明
-base.less              重置标签样式
-comm.less              常用的样式 
-flex.less              弹性布局
-float.less             浮动布局（12栅格）
-icon.less              图标
-var.less               变量
-sui.less               入口文件
+|-- css                   css样式库
+| |- sui.css              sui样式
+| |- sui.min.css          sui压缩样式
+|-- examples              样式列子
+| |- icon.html            图标样式列子
+|-- fonts                 图标文件
+| | - iconfont.eot       
+| | - iconfont.svg   
+| | - iconfont.ttf 
+| | - iconfont.woff
+|--less                   动态的样式表
+| | - animation.less      动画样式
+| | - base.less           重置标签
+| | - comm.less           常用的样式
+| | - flex.less           弹性布局
+| | - float.less          浮动布局（12栅格）
+| | - icon.less           图标
+| | - var.less            变量
+| | - sui.less            入口文件
+
 
 更新内容
 1、修改版本号;
