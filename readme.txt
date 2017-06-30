@@ -18,3 +18,4 @@ sui.less               入口文件
 4、添加各个屏幕的显示隐藏visible hidden;
 5、添加压缩文件sui.min.css;
 6、更新图片库;
+7、ifream去掉边框

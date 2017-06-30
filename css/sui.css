@@ -30,6 +30,7 @@ h4,
 h5,
 h6,
 form,
+iframe,
 fieldset,
 legend,
 textarea,
@@ -56,6 +57,9 @@ a:active {
 b,
 strong {
   font-weight: bold;
+}
+.iframe {
+  border: none;
 }
 *,
 :after,
