@@ -1,6 +1,6 @@
 .animation-duration(@className,@n, @i: 0) when (@i =< @n) {
   .sui-@{className}-@{i}s {
-    animation-duration: (@i / 10)s;
+    animation-duration: (@i / 10s);
   }
   .animation-duration(@className,@n, (@i + 1));
 }
@@ -9,7 +9,7 @@
 
 .animation-delay(@className,@n, @i: 0) when (@i =< @n) {
   .sui-@{className}-@{i}s {
-    animation-delay: (@i / 10)s;
+    animation-delay: (@i / 10s);
   }
   .animation-duration(@className,@n, (@i + 1));
 }
