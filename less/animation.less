@@ -1,0 +1,70 @@
+.animation-duration(@className,@n, @i: 0) when (@i =< @n) {
+  .sui-@{className}-@{i}s {
+    animation-duration: (@i / 10)s;
+  }
+  .animation-duration(@className,@n, (@i + 1));
+}
+
+.animation-duration(adt,30);
+
+.animation-delay(@className,@n, @i: 0) when (@i =< @n) {
+  .sui-@{className}-@{i}s {
+    animation-delay: (@i / 10)s;
+  }
+  .animation-duration(@className,@n, (@i + 1));
+}
+
+.animation-delay(ady,40);
+
+.keyframes (@prefix,@name,@content) when (@prefix=def) {
+  @keyframes @name {
+    @content();
+  }
+}
+
+.keyframes (@prefix,@name,@content) when (@prefix=moz) {
+  @-moz-keyframes @name {
+    @content();
+  }
+}
+
+.keyframes (@prefix,@name,@content) when (@prefix=o) {
+  @-o-keyframes @name {
+    @content();
+  }
+}
+
+.keyframes (@prefix,@name,@content) when (@prefix=webkit) {
+  @-webkit-keyframes  @name{
+    @content();
+  }
+}
+
+.keyframes (@prefix,@name,@content) when (@prefix=all) {
+  .keyframes(moz,@name,@content);
+  .keyframes(o,@name,@content);
+  .keyframes(webkit,@name,@content);
+  .keyframes(def,@name,@content);
+}
+
+[class^=sui-am],
+[class*=sui-am]{
+    animation-fill-mode:forwards;
+}
+
+.sui-amFadeinY{
+    animation-name: FadeInY;
+    opacity: 0;
+}
+
+.keyframes(all,FadeInY,{
+  from{
+  	opacity: 0;
+    transform:translateY(40px);
+  }
+  to{
+  	opacity: 1;
+    transform:translateY(0px);
+  }
+});
+

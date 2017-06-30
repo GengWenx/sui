@@ -1,8 +1,8 @@
 @charset "UTF-8";
 /**
-	@style sui v1.0.2
-	@author gengwenx
-	@date 2017/04/13
+	@version   1.0.3
+	@update    2017/06/30
+  @author    gengwenx
 */
 html,
 body {
@@ -11,35 +11,23 @@ body {
   background-color: #fff;
 }
 
-html,
-body,
-div,
-button,
-input,
-img,
-p,
-dl,
-dt,
-dd,
-ul,
-ol,
-li,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-form,
-iframe,
-fieldset,
-legend,
-textarea,
-table,
-th,
-td {
+html,body,iframe,section,header,footer,main,
+h1,h2,h3,h4,h5,h6,
+nav,menu,
+dl,dt,dd,ul,ol,li,
+div,p,
+a,img,span,strong,em,b,small,sub,sup,
+form,input,label,button,select,option,textarea,
+canvas,video,audio,
+table,caption,thead,tbody,tr,th,td{
   padding: 0;
   margin: 0;
+}
+
+html,body,iframe,section,header,footer,main,
+h1,h2,h3,h4,h5,h6,
+nav,menu{
+  display:block;
 }
 
 ul,
@@ -49,15 +37,38 @@ ol {
 
 img {
   vertical-align: middle;
+  border-style: none;
 }
 
 a {
+  background-color: transparent; 
   color: #007aff;
   text-decoration: none;
+  -webkit-text-decoration-skip: objects; 
 }
 
 a:active {
   color: #0062cc;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
 }
 
 b,
@@ -65,8 +76,27 @@ strong {
   font-weight: bold;
 }
 
-.iframe{
+iframe{
   border:none;
+}
+
+audio,
+video {
+  display: inline-block;
+}
+
+button,
+input { 
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+textarea {
+  overflow: auto;
 }
 
 *,

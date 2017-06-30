@@ -1,9 +1,10 @@
 更新日志
-时间 2017-06-21
+版本 1.0.3
+时间 2017-06-30
 人物 gengwenx
 
 目录说明
-base.less              一般的初始化html标签
+base.less              重置标签样式
 comm.less              常用的样式 
 flex.less              弹性布局
 float.less             浮动布局（12栅格）
@@ -19,3 +20,4 @@ sui.less               入口文件
 5、添加压缩文件sui.min.css;
 6、更新图片库;
 7、ifream去掉边框
+8、添加动画类型
