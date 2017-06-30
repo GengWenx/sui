@@ -52,12 +52,12 @@
     animation-fill-mode:forwards;
 }
 
-.sui-amFadeinY{
-    animation-name: FadeInY;
+.sui-amMoveUp{
+    animation-name: MoveUp;
     opacity: 0;
 }
 
-.keyframes(all,FadeInY,{
+.keyframes(all,MoveUp,{
   from{
   	opacity: 0;
     transform:translateY(40px);
@@ -68,3 +68,18 @@
   }
 });
 
+.sui-amMoveDown{
+    animation-name: MoveDown;
+    opacity: 0;
+}
+
+.keyframes(all,MoveDown,{
+  from{
+    opacity: 0;
+    transform:translateY(-40px);
+  }
+  to{
+    opacity: 1;
+    transform:translateY(0px);
+  }
+});
