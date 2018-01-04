@@ -1,3 +1,5 @@
+@import 'variable.less';
+
 [hidden],
 template,
 .sui-hidden {
@@ -21,4 +23,22 @@ template,
   word-wrap: break-word;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
+}
+
+.sui-container{
+  width:@device-minwidth;
+  margin-left:auto;
+  margin-right:auto; 
+  padding:15px;
+}
+
+.sui-container-fluid{
+  width:100%;
+  padding:15px;
+}
+
+@media screen and (max-width: @device-minwidth) {
+  .sui-container{
+    width:100%;
+  }
 }

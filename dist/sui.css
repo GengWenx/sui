@@ -4,7 +4,7 @@
 	@update    2018/01/04
   @author    gengwenx
 */
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 0px) {
   html,
   body,
   input,
@@ -23,21 +23,10 @@
   select,
   textarea,
   p {
-    font-size: 12.5px;
-  }
-}
-@media screen and (min-width: 374px) {
-  html,
-  body,
-  input,
-  button,
-  select,
-  textarea,
-  p {
     font-size: 13px;
   }
 }
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 410px) {
   html,
   body,
   input,
@@ -45,7 +34,7 @@
   select,
   textarea,
   p {
-    font-size: 13.5px;
+    font-size: 14px;
   }
 }
 @media screen and (min-width: 414px) {
@@ -56,7 +45,7 @@
   select,
   textarea,
   p {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 html,
@@ -181,7 +170,18 @@ video {
 }
 button,
 input {
+  outline: none;
   overflow: visible;
+}
+input[type="number"] ::-webkit-outer-spin-button,
+input[type="number"] ::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
 }
 button,
 select {
@@ -218,29 +218,44 @@ template,
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
 }
-[class^=sui-flex-col],
-[class*=sui-flex-col],
-[class^=sui-flex-row],
-[class*=sui-flex-row],
-[class^=sui-flexcenter-row],
-[class*=sui-flexcenter-row],
-[class^=sui-flexcenter-col],
-[class*=sui-flexcenter-col] {
+.sui-container {
+  width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px;
+}
+.sui-container-fluid {
+  width: 100%;
+  padding: 15px;
+}
+@media screen and (max-width: 1100px) {
+  .sui-container {
+    width: 100%;
+  }
+}
+[class^=sui-flexcol],
+[class*=sui-flexcol],
+[class^=sui-flexrow],
+[class*=sui-flexrow],
+[class^=sui-flexcenterrow],
+[class*=sui-flexcenterrow],
+[class^=sui-flexcentercol],
+[class*=sui-flexcentercol] {
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
 }
-.sui-flex-col {
+.sui-flexcol {
   -webkit-box-orient: vertical;
   -webkit-flex-flow: column;
   flex-flow: column;
 }
-.sui-flex-row {
+.sui-flexrow {
   -webkit-box-orient: horizontal;
   -webkit-flex-flow: row;
   flex-flow: row;
 }
-.sui-flexcenter-row {
+.sui-flexcenterrow {
   -webkit-box-orient: horizontal;
   -webkit-flex-flow: row;
   flex-flow: row;
@@ -251,7 +266,7 @@ template,
   -webkit-justify-content: center;
   justify-content: center;
 }
-.sui-flexcenter-col {
+.sui-flexcentercol {
   -webkit-box-orient: vertical;
   -webkit-flex-flow: column;
   flex-flow: column;
@@ -262,32 +277,32 @@ template,
   -webkit-justify-content: center;
   justify-content: center;
 }
-.sui-flex-1 {
+.sui-flex1 {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
   flex: 1;
 }
-.sui-flex-2 {
+.sui-flex2 {
   -webkit-box-flex: 2;
   -webkit-flex: 2;
   flex: 2;
 }
-.sui-flex-3 {
+.sui-flex3 {
   -webkit-box-flex: 3;
   -webkit-flex: 3;
   flex: 3;
 }
-.sui-flex-4 {
+.sui-flex4 {
   -webkit-box-flex: 4;
   -webkit-flex: 4;
   flex: 4;
 }
-.sui-flex-5 {
+.sui-flex5 {
   -webkit-box-flex: 5;
   -webkit-flex: 5;
   flex: 5;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .sui-row-xs-1 {
     width: 8.33333333%;
   }
@@ -741,61 +756,6 @@ template,
   to {
     opacity: 1;
     transform: translateY(0px);
-  }
-}
-@media screen and (min-width: 320px) {
-  html,
-  body,
-  input,
-  button,
-  select,
-  textarea,
-  p {
-    font-size: 12px;
-  }
-}
-@media screen and (min-width: 360px) {
-  html,
-  body,
-  input,
-  button,
-  select,
-  textarea,
-  p {
-    font-size: 12.5px;
-  }
-}
-@media screen and (min-width: 374px) {
-  html,
-  body,
-  input,
-  button,
-  select,
-  textarea,
-  p {
-    font-size: 13px;
-  }
-}
-@media screen and (min-width: 400px) {
-  html,
-  body,
-  input,
-  button,
-  select,
-  textarea,
-  p {
-    font-size: 13.5px;
-  }
-}
-@media screen and (min-width: 414px) {
-  html,
-  body,
-  input,
-  button,
-  select,
-  textarea,
-  p {
-    font-size: 14px;
   }
 }
 .sui-amMoveDown {

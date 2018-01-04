@@ -11,6 +11,12 @@
 * | |-- less                    less文件夹
 * |--template                   demo文件
 
+## 使用说明
+*  适用于HTML5文档
+*  重置样式
+*  弹性布局
+*  浮动布局
+*  响应式布局
 
 ## 更新内容
 * 1、修改版本号;
@@ -26,7 +32,6 @@
 ## git command
 * 拷贝项目 (需要nodejs);
 * git clone  /https://github.com/GengWenx/sui.git/   
-*** 
 
 * 查看状态
 * git status

@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import 'variable.less';
 
 /**
 	@version   1.1.4
@@ -6,7 +7,7 @@
   @author    gengwenx
 */
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 0px) {
   html,
   body,
   input,
@@ -26,35 +27,11 @@
   select,
   textarea,
   p {
-    font-size: 12.5px;
-  }
-}
-
-@media screen and (min-width: 374px) {
-  html,
-  body,
-  input,
-  button,
-  select,
-  textarea,
-  p {
     font-size: 13px;
   }
 }
 
-@media screen and (min-width: 400px) {
-  html,
-  body,
-  input,
-  button,
-  select,
-  textarea,
-  p {
-    font-size: 13.5px;
-  }
-}
-
-@media screen and (min-width: 414px) {
+@media screen and (min-width: 410px) {
   html,
   body,
   input,
@@ -66,12 +43,24 @@
   }
 }
 
+@media screen and (min-width: 414px) {
+  html,
+  body,
+  input,
+  button,
+  select,
+  textarea,
+  p {
+    font-size: 16px;
+  }
+}
+
 html,
 body {
   -webkit-tap-highlight-color: transparent;
   font-family: Microsoft YaHei, Arial, sans-serif;
   background-color: @theme-background-color;
-  color:@theme-color;
+  color: @theme-color;
 }
 
 html,
@@ -202,7 +191,21 @@ video {
 
 button,
 input {
+  outline:none;
   overflow: visible;
+}
+
+input[type="number"] ::-webkit-outer-spin-button,
+input[type="number"] ::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
 }
 
 button,

@@ -1,29 +1,29 @@
-[class^=sui-flex-col],
-[class*=sui-flex-col],
-[class^=sui-flex-row],
-[class*=sui-flex-row],
-[class^=sui-flexcenter-row],
-[class*=sui-flexcenter-row],
-[class^=sui-flexcenter-col],
-[class*=sui-flexcenter-col] {
+[class^=sui-flexcol],
+[class*=sui-flexcol],
+[class^=sui-flexrow],
+[class*=sui-flexrow],
+[class^=sui-flexcenterrow],
+[class*=sui-flexcenterrow],
+[class^=sui-flexcentercol],
+[class*=sui-flexcentercol] {
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: flex;
 }
 
-.sui-flex-col {
+.sui-flexcol {
 	-webkit-box-orient: vertical;
 	-webkit-flex-flow: column;
 	flex-flow: column;
 }
 
-.sui-flex-row {
+.sui-flexrow {
 	-webkit-box-orient: horizontal;
 	-webkit-flex-flow: row;
 	flex-flow: row;
 }
 
-.sui-flexcenter-row {
+.sui-flexcenterrow {
 	-webkit-box-orient: horizontal;
 	-webkit-flex-flow: row;
 	flex-flow: row;
@@ -35,7 +35,7 @@
 	justify-content: center;
 }
 
-.sui-flexcenter-col {
+.sui-flexcentercol {
 	-webkit-box-orient: vertical;
 	-webkit-flex-flow: column;
 	flex-flow: column;
@@ -48,7 +48,7 @@
 }
 
 .sui-flexs(@n, @i: 1) when (@i =< @n) {
-	.sui-flex-@{i} {
+	.sui-flex@{i} {
 		-webkit-box-flex: @i;
 		-webkit-flex: @i;
 		flex: @i;
