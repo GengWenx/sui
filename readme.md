@@ -1,7 +1,7 @@
 ## 更新日志
-* version:  1.0.4
+* version:  1.1.4
 * author:   gengwenx
-* date:     2017-06-30
+* update:   2018-01-04
 
 ## 目录
 * |-- dist                      css样式
@@ -17,9 +17,9 @@
 * 2、同一所有元素为边框盒模型(包括伪类);
 * 3、添加显示隐藏类show hidden;
 * 4、添加各个屏幕的显示隐藏visible hidden;
-* 5、添加压缩文件sui.min.css;
-* 6、更新图片库;
-* 7、ifream去掉
+* 5、去掉压缩文件sui.min.css;
+* 6、去掉图标库;
+* 7、ifream去掉边框
 * 8、添加动画类型边框
 
 
