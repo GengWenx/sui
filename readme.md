@@ -1,28 +1,15 @@
 ## 更新日志
 * version:  1.0.4
-* date:     2017-06-30
 * author:   gengwenx
+* date:     2017-06-30
 
 ## 目录
-|-- css                       css样式库
-| |- sui.css                  sui样式
-| |- sui.min.css              sui压缩样式
-|-- examples                  样式列子
-| |- icon.html                图标样式列子
-|-- fonts                     图标文件
-| | - iconfont.eot       
-| | - iconfont.svg   
-| | - iconfont.ttf 
-| | - iconfont.woff
-|--less                      动态的样式表
-| | - animation.less         动画样式
-| | - base.less              重置标签
-| | - comm.less              常用的样式
-| | - flex.less              弹性布局
-| | - float.less             浮动布局（12栅格）
-| | - icon.less              图标
-| | - variable.less          变量
-| | - sui.less               入口文件
+* |-- dist                      css样式
+* | |- sui.css                  sui样式文件
+* |-- src                       样式核心库
+* | |-- fonts                   图标文件夹
+* | |-- less                    less文件夹
+* |--template                   demo文件
 
 
 ## 更新内容
@@ -39,8 +26,8 @@
 ## git command
 * 拷贝项目 (需要nodejs);
 * git clone  /https://github.com/GengWenx/sui.git/    
-* 
-*  
+
+
 * 查看状态
 * git status
 * git rm /filename/
@@ -49,4 +36,3 @@
 * git commit -m /context/
 * git remote add origin /https://github.com/GengWenx/sui.git/
 * git push -u origin master
-*    
