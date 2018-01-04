@@ -25,8 +25,8 @@
 
 ## git command
 * 拷贝项目 (需要nodejs);
-* git clone  /https://github.com/GengWenx/sui.git/    
-
+* git clone  /https://github.com/GengWenx/sui.git/   
+*** 
 
 * 查看状态
 * git status
