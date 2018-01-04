@@ -1,0 +1,18 @@
+{
+  "name": "sui",
+  "version": "1.0.0",
+  "description": "sui is a simple WEB-CSS framework",
+  "scripts": {
+    "webpack": "webpack --config webpack.config.js"
+  },
+  "author": "gengwenx",
+  "devDependencies": {
+    "css-loader": "^0.28.7",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "less": "^2.7.3",
+    "less-loader": "^4.0.5",
+    "style-loader": "^0.19.1",
+    "url-loader": "^0.6.2",
+    "webpack": "^3.10.0"
+  }
+}

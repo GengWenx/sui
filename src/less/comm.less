@@ -1,0 +1,24 @@
+[hidden],
+template,
+.sui-hidden {
+  display: none;
+}
+
+.sui-show,
+.sui-block {
+  display: block !important;
+}
+
+[class^=sui-ellipsis],
+[class*=sui-ellipsis] {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.sui-ellipsis-2 {
+  display: -webkit-box;
+  word-wrap: break-word;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
