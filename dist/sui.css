@@ -200,7 +200,7 @@ textarea {
 [hidden],
 template,
 .sui-hidden {
-  display: none;
+  display: none !important;
 }
 .sui-show,
 .sui-block {
@@ -341,10 +341,10 @@ template,
     width: 100%;
   }
   .visible-xs {
-    display: block;
+    display: block !important;
   }
   .hidden-xs {
-    display: none;
+    display: none !important;
   }
 }
 @media screen and (min-width: 768px) {
@@ -385,10 +385,10 @@ template,
     width: 100%;
   }
   .visible-sm {
-    display: block;
+    display: block !important;
   }
   .hidden-sm {
-    display: none;
+    display: none !important;
   }
 }
 @media screen and (min-width: 992px) {
@@ -429,10 +429,10 @@ template,
     width: 100%;
   }
   .visible-md {
-    display: block;
+    display: block !important;
   }
   .hidden-md {
-    display: none;
+    display: none !important;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -473,10 +473,10 @@ template,
     width: 100%;
   }
   .visible-lg {
-    display: block;
+    display: block !important;
   }
   .hidden-lg {
-    display: none;
+    display: none !important;
   }
 }
 .sui-clearfix {
