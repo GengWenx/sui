@@ -5,7 +5,8 @@
 
 ## 目录
 * |-- dist                      css样式
-* | |- sui.css                  sui样式文件
+* | |- css                      sui样式文件
+* | |- fonts                    图标文件夹
 * |-- src                       样式核心库
 * | |-- fonts                   图标文件夹
 * | |-- less                    less文件夹

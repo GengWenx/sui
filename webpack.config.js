@@ -10,8 +10,8 @@ module.exports = {
                 use: 'css-loader!less-loader'
             }),
         }, {
-            test: /\.(woff|svg|ect|ttf)$/i,
-            loader: 'url-loader',
+            test: /\.(woff|woff2|svg|eot|ttf)\??.*$/,
+            loader: 'file-loader?name=fonts/[name].[ext]',
         }, ]
     },
 
@@ -25,7 +25,7 @@ module.exports = {
     },
 
     plugins: [
-        new ExtractTextPlugin("[name].css", {
+        new ExtractTextPlugin("css/[name].css", {
             allChunks: false
         }),
     ]

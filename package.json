@@ -1,6 +1,6 @@
 {
   "name": "sui",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "description": "sui is a simple WEB-CSS framework",
   "scripts": {
     "webpack": "webpack --config webpack.config.js"
@@ -9,6 +9,7 @@
   "devDependencies": {
     "css-loader": "^0.28.7",
     "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.6",
     "less": "^2.7.3",
     "less-loader": "^4.0.5",
     "style-loader": "^0.19.1",
